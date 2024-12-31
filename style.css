@@ -1,0 +1,99 @@
+*{
+ box-sizing: border-box;
+}
+body{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.header{
+    width: 90%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo{
+    font-size: 2em;
+    background: #fddddd;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    position: relative;
+    width: 70%;
+    padding: 12px 8px 12px 40px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background: #fddddd;
+    align-items: center;
+}
+
+.addButton{
+    padding: 5px;
+    border: 2px solid #fdaeae;
+    background: #fdaeae;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+   
+}
+.close, .edit{
+    color: black;
+    cursor: pointer;
+    right: 0;
+    padding: 10px;
+    transition: 0.3s;
+}
+.close:hover{
+    background-color: #f44336;
+    color: white;
+}
+.edit {
+    border-radius: 5px;
+    rotate: 45deg;
+}
+.edit:hover{
+    background-color: #4ca049;
+    rotate: 90deg;
+}
+.myList{
+    width: 90%;
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+li {
+    table-layout: auto auto auto auto;
+    font-size: 1.5em;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+li:nth-child(odd){
+    background-color: #fdeded;
+}
+li:nth-child(even){
+    background-color: #efefff;
+}
+li:hover{
+    background: #d4d4d4;
+}
+
